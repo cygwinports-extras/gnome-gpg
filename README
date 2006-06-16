@@ -1,0 +1,72 @@
+gnome-gpg
+------------------------------------------
+gnome-gpg is is a simple commandline wrapper around gpg that
+makes it store its passphrase in gnome-keyring.  It is a direct
+competitor to (the unmaintained) quintuple-agent.
+
+It is not a keyring management program or anything like that, and
+has no plans to become one.
+
+Runtime requirements:
+  cygwin-1.5.19-4
+  gnome-keyring-0.4.7-1
+  gnupg-1.4.2.1-1
+  gtk2-x11-runtime-2.6.10-1
+  libgnome2-2.12.0.1-1
+  libgnomeui2-2.12.1-1
+  xorg-x11-bin-dlls-6.8.2.0-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  cygwin-1.5.19-4
+  autoconf2.5-2.59-3
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  gawk-3.1.5-1
+  gcc-core-3.4.4-1
+  make-3.80-1
+  pkgconfig-0.17.2-2
+  sed-4.1.4-1
+
+Canonical website:
+  http://people.redhat.com/~walters/gnome-gpg/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/gnome/sources/gnome-gpg/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnome-gpg-0.4.0-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  ./gnome-gpg-0.4.0-X.sh all
+
+This will create:
+  /usr/src/gnome-gpg-0.4.0-X-src.tar.bz2
+  /usr/src/gnome-gpg-0.4.0-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/bin/gnome-gpg.exe
+  /usr/share/doc/Cygwin/gnome-gpg-0.4.0.README
+  /usr/share/doc/gnome-gpg-0.4.0/AUTHORS
+  /usr/share/doc/gnome-gpg-0.4.0/ChangeLog
+  /usr/share/doc/gnome-gpg-0.4.0/COPYING
+  /usr/share/doc/gnome-gpg-0.4.0/INSTALL
+  /usr/share/doc/gnome-gpg-0.4.0/NEWS
+  /usr/share/doc/gnome-gpg-0.4.0/README
+
+------------------
+
+Port Notes:
+
+----- version 0.4.0-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/

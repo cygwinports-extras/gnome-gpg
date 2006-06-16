@@ -1,0 +1,9 @@
+category: Gnome
+requires: cygwin gnome-keyring gnupg gtk2-x11-runtime libgnome2 libgnomeui2 xorg-x11-bin-dlls
+sdesc: "GPG commandline wrapper which uses gnome-keyring"
+ldesc: "gnome-gpg is is a simple commandline wrapper around gpg that
+makes it store its passphrase in gnome-keyring.  It is a direct
+competitor to (the unmaintained) quintuple-agent.
+
+It is not a keyring management program or anything like that, and
+has no plans to become one."
