@@ -8,23 +8,23 @@ It is not a keyring management program or anything like that, and
 has no plans to become one.
 
 Runtime requirements:
-  cygwin-1.5.22-1
-  gnome-keyring-0.6.0-1
+  cygwin-1.5.25-11
+  glib2-2.14.6-1
+  gnome-keyring-2.20.3-1
   gnupg
-  gtk2-x11-2.10.6-1
-  libX11_6-1.1.1-1
-  libgnome2-2.16.0-1
-  libgnomeui2-2.16.1-1
+  gtk2-x11-2.12.9-1
+  libX11_6-1.1.3-1
+  libgnome2-2.20.1.1-1
+  libgnomeui2-2.20.1.1-1
 
 Build requirements:
 (besides corresponding -devel packages)
-  cygwin-1.5.22-1
-  autoconf2.5-2.60-1
-  automake1.9-1.9.6-1
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
   binutils-20060817-1
-  cygport-0.2.7-1
-  gawk-3.1.5-2
-  gcc-core-3.4.4-1
+  cygport-0.3.10-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
   make-3.81-1
   pkg-config-0.21-1
   sed-4.1.5-2
@@ -38,33 +38,36 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-gpg-0.5.0-X-src.tar.bz2
+  unpack gnome-gpg-0.6.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-gpg-0.5.0-X.cygport all
+  cygport ./gnome-gpg-0.6.0-X.cygport all
 
 This will create:
-  /usr/src/gnome-gpg-0.5.0-X-src.tar.bz2
-  /usr/src/gnome-gpg-0.5.0-X.tar.bz2
+  /usr/src/gnome-gpg-0.6.0-X-src.tar.bz2
+  /usr/src/gnome-gpg-0.6.0-X.tar.bz2
 
 -------------------------------------------
 
 Files included in the binary package:
 
   /usr/bin/gnome-gpg.exe
-  /usr/share/doc/Cygwin/gnome-gpg-0.5.0.README
-  /usr/share/doc/gnome-gpg-0.5.0/AUTHORS
-  /usr/share/doc/gnome-gpg-0.5.0/ChangeLog
-  /usr/share/doc/gnome-gpg-0.5.0/COPYING
-  /usr/share/doc/gnome-gpg-0.5.0/INSTALL
-  /usr/share/doc/gnome-gpg-0.5.0/NEWS
-  /usr/share/doc/gnome-gpg-0.5.0/README
+  /usr/share/doc/Cygwin/gnome-gpg-0.6.0.README
+  /usr/share/doc/gnome-gpg-0.6.0/AUTHORS
+  /usr/share/doc/gnome-gpg-0.6.0/ChangeLog
+  /usr/share/doc/gnome-gpg-0.6.0/COPYING
+  /usr/share/doc/gnome-gpg-0.6.0/INSTALL
+  /usr/share/doc/gnome-gpg-0.6.0/NEWS
+  /usr/share/doc/gnome-gpg-0.6.0/README
   /usr/share/man/man1/gnome-gpg.1.gz
 
 ------------------
 
 Port Notes:
+
+----- version 0.6.0-1 -----
+Version bump.
 
 ----- version 0.5.0-1 -----
 Version bump, built with cygport.

@@ -1,0 +1,4 @@
+inherit gnome2
+
+DESCRIPTION="GNOME GPG commandline wrapper"
+HOMEPAGE="http://people.redhat.com/~walters/gnome-gpg/"
